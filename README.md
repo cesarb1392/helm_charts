@@ -23,7 +23,7 @@ You can then run `helm search repo cesarb1392` to see the charts.
 
 ## Contributing
 
-The source code of Helm charts can be found on GitHub: https://github.com/cesarb1392/helm-charts/charts
+The source code of Helm charts can be found on GitHub: https://github.com/cesarb1392/helm_charts/tree/main/charts
 
 ## License
 
