@@ -3,7 +3,7 @@
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/wireguard-bananas)](https://artifacthub.io/packages/search?repo=wireguard-bananas)
 
 ### Charts list:
-- [wireguard](https://github.com/cesarb1392/helm_charts/tree/main/wireguard)
+- [wireguard](https://github.com/cesarb1392/helm_charts/tree/main/charts/wireguard)
 
 ## Usage
 
