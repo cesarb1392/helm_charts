@@ -83,11 +83,10 @@ spec:
             type: 'CharDevice'
             path: /dev/net/tun
         - name: data
-        {{- if .Values.persistence.enabled }}
+        {{ if ne .Values.persistence.existingClaim "" }}
           persistentVolumeClaim:
-            claimName: {{ if .Values.persistence.existingClaim }}{{ .Values.persistence.existingClaim }}{{- else }}{{ $fullName }}{{- end }}
-        {{- end }}
-        {{- if not .Values.persistence.enabled }}
+            claimName: {{ .Values.persistence.existingClaim }}
+        {{- else }}
           emptyDir: {}
         {{- end }}
         - name: config
