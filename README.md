@@ -20,24 +20,22 @@ If you had already added this repo earlier, run `helm repo update` to retrieve t
 
 You can then run `helm search repo cesarb1392` to see the charts.
 
-
-
 ### First time setup
-```shell
-helm lint <chart dir>
-helm package <char name> -d <chart dir>
-helm repo index --url <repo url>
-```
+```console
+git checkout --orphan gh-pages
+git rm -rf .
+git commit -m "Initial commit" --allow-empty
+git push --set-upstream origin gh-pages
 
-### Github pages
-- go to Github > repo > settings > pages
-- source: deploy from branch
-- branch: <target branch>, </root>
+# goto -> GH Settings -> Pages -> check `gp-pages` is selected
 
-### Release updates
-```shell
-# https://helm.sh/docs/helm/helm_repo_index/
-helm repo index . --url <repo url> --merge index.yaml
+git checkout main # index.yaml is managed in gh-pages branch
+helm create <chart name>
+push helm chart + https://github.com/marketplace/actions/helm-chart-releaser >> .github/workflows/release.yml
+
+Charts.yaml update -> appVersion: "0.1.0"
+
+git push !
 ```
 
 
