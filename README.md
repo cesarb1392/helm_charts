@@ -28,4 +28,4 @@ The source code of Helm charts can be found on GitHub: https://github.com/cesarb
 ## License
 
 <!-- Keep full URL links to repo files because this README syncs from main to gh-pages.  -->
-[Apache 2.0 License](https://github.com/cesarb1392/helm-charts/blob/main/LICENSE).
+[Apache 2.0 License](https://github.com/cesarb1392/helm_charts/blob/main/LICENSE).
