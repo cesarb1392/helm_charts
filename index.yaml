@@ -3,6 +3,16 @@ entries:
   wireguard:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-11-19T11:35:49.606530114Z"
+    description: A Wireguard VPN Access Server
+    digest: f3b92a3bc9191c8f7f1d2db1467b47acd559484a18461d634d2f261ddff7cf98
+    name: wireguard
+    type: application
+    urls:
+    - https://github.com/cesarb1392/helm_charts/releases/download/wireguard-1.0.0/wireguard-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-11-19T10:55:41.763369785Z"
     description: A Helm chart for Kubernetes
     digest: 6e77e9eec831523e2eb183e2154854b27122995c85e3c28c985881776892f25a
