@@ -3,6 +3,16 @@ entries:
   wireguard:
   - apiVersion: v2
     appVersion: v0.4.6
+    created: "2025-02-02T11:24:57.021415302Z"
+    description: A Wireguard VPN Access Server
+    digest: 173701038b51d5a92a55bf33cfa75f7d723f80da1dbf7022665ba2976beea35e
+    name: wireguard
+    type: application
+    urls:
+    - https://github.com/cesarb1392/helm_charts/releases/download/wireguard-1.5.0/wireguard-1.5.0.tgz
+    version: 1.5.0
+  - apiVersion: v2
+    appVersion: v0.4.6
     created: "2022-11-19T12:07:54.48302186Z"
     description: A Wireguard VPN Access Server
     digest: e207fc422c48a2eb313ab2f8a5b31161ed36ea4508ad2f873b5a65ac73caf5da
