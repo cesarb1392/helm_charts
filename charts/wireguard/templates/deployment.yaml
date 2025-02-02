@@ -29,6 +29,10 @@ spec:
     {{- end }}
       containers:
         - name: {{ .Chart.Name }}
+          {{- with .Values.securityContext }}
+          securityContext:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
           securityContext:
             capabilities:
               add: ['NET_ADMIN']
